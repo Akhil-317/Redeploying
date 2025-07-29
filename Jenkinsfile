@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git url: 'https://github.com/rameshdurgam115/JenkinsCICDREPO.git', credentialsId: 'github-pat'
+        git url: 'https://github.com/Akhil-317/Redeploying.git'
       }
     }
 
@@ -30,7 +30,7 @@ pipeline {
 
   post {
     success {
-      echo "✅ Deployment succeeded. Access app via http://192.168.128.172:80"
+      echo "✅ Deployment succeeded. Access app via http://192.168.128.173:80"
     }
     failure {
       echo "❌ Deployment failed. Check Jenkins logs."
