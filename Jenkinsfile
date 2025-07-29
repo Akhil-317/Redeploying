@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git url: 'https://github.com/Akhil-317/Redeploying.git'
+        git branch: 'main', url: 'https://github.com/Akhil-317/Redeploying.git'
       }
     }
 
